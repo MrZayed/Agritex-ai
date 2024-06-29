@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 0.2px #ddd;
+    background: #ddd;
+    overflow: hidden;
+}
+
+.navbar img {
+    width: 60px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.idle {
+    color: black;
+    text-decoration: overline black;
+    font-family: 'FKGrotesk', sans-serif;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    float: left;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'FKGrotesk', sans-serif;
+}
+
+.team {
+    background-color: gray;
+    border-radius: 50cm;
+}
+
+.navbar a:hover {
+    background-color: #000;
+    border-radius: 50px;
+    color: white;
+}
+
+
+
+
+.container {
+    width: 50%;
+    padding-top: 50px;
+    margin: 25px auto;
+    height: 20%;
+}
+
+.grid {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 3%;
+}
+
+.card {
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(171.38deg, #F9FBFC 3.36%, #E2EAF5 95.69%);
+    box-shadow: 0px 0px 20px rgba(227, 235, 246, 0.3);
+    border-radius: 30px;
+    text-align: right;
+}
+
+.card:hover {
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    transition-duration: 0.5s;
+}
+
+
+.card_img img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    float: left;
+}
+
+.card_body {
+    padding: 0px 0px;
+}
+
+.card_title {
+    font-weight: 800;
+    color: #25262C;
+    font-size: 32px;
+    padding-bottom: 15px;
+    float: center;
+
+}
+
+.designation {
+    font-weight: 700;
+    font-size: 22px;
+    color: #959EAF;
+
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-10000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.mohab {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
+
+.ehab {
+    animation-name: slideInLeft;
+    animation-duration: 3s;
+}
+
+.zayed {
+    animation-name: slideInLeft;
+    animation-duration: 5s;
+}
+
+.mokhtar {
+    animation-name: slideInLeft;
+    animation-duration: 7s;
+}
+
+.ali {
+    animation-name: slideInLeft;
+    animation-duration: 9s;
+}
+
+
+@media (max-width: 1024px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .card_title {
+        font-size: 26px;
+    }
+
+    .designation {
+        font-size: 18px;
+    }
+
+}

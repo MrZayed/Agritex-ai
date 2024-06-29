@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 0.2px #ddd;
+    background: #ddd;
+    overflow: hidden;
+}
+
+.navbar img {
+    width: 60px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.idle {
+    color: black;
+    text-decoration: overline black;
+    font-family: 'FKGrotesk', sans-serif;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    float: left;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'FKGrotesk', sans-serif;
+}
+
+.contact {
+    background-color: gray;
+    border-radius: 50cm;
+}
+
+.navbar a:hover {
+    background-color: #000;
+    border-radius: 50px;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.title h2 {
+    font-weight: 600;
+    color: #04042e;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #fa6d86;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 14px;
+    border-radius: 20px;
+}
+
+.input:focus {
+    border: 2px solid #ff994f;
+}
+
+.input::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-right img {
+    width: 500px;
+    border-radius: 2.5cm;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(+10000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+.contact-right img {
+    animation-name: slideInRight;
+    animation-duration: 3s;
+}
+
+@media (max-width:800px) {
+    .input {
+        width: 80vw;
+    }
+
+    .contact-right {
+        display: none;
+    }
+}

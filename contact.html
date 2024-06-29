@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <img src="ag.png" alt="">
+        <div class="idle">
+            <h1><b>Agritex-Ai</b></h1>
+        </div>
+        <nav>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li class="contact"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="e75011ef-9d9c-4ae2-971b-e184e1eb988f">
+            <input type="text" name="name" placeholder="Your Name" class="input" required>
+            <input type="email" name="email" placeholder="Your Email" class="input" required>
+            <textarea name="message" placeholder="Your Message" class="input" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-right">
+            <img src="contact.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

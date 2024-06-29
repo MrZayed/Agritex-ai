@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 0.2px #ddd;
+    background: #ddd;
+    overflow: hidden;
+}
+
+.navbar img {
+    width: 60px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.idle {
+    color: black;
+    text-decoration: overline black;
+    font-family: 'FKGrotesk', sans-serif;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    float: left;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'FKGrotesk', sans-serif;
+}
+
+.home {
+    background-color: gray;
+    border-radius: 50cm;
+}
+
+.navbar a:hover {
+    background-color: #000;
+    border-radius: 50px;
+    color: white;
+}
+
+
+.right-img img {
+    background-size: cover;
+    width: 50%;
+    float: right;
+    margin-right: 30px;
+    margin-top: 40px;
+    border-radius: 2.5cm;
+
+}
+
+.left-description {
+    color: #04042e;
+    font-size: 22px;
+    margin-top: 200px;
+    margin-left: 120px;
+    max-width: 500px;
+    float: left;
+    font-family: 'FKGrotesk', sans-serif;
+    text-decoration: none;
+
+}
+
+.tech {
+    color: #04042e;
+    font-size: 30px;
+    margin-left: 180px;
+    position: absolute;
+    margin-top: 510px;
+
+}
+
+.tech hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #191970;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.left-img img {
+
+    background-size: cover;
+    width: 32%;
+    float: left;
+    margin-top: 170px;
+    margin-left: 90px;
+    border-radius: 2.5cm;
+}
+
+.right-description {
+    color: #04042e;
+    font-size: 22px;
+    margin-top: 200px;
+    margin-right: 120px;
+    max-width: 450px;
+    float: right;
+    font-family: 'FKGrotesk', sans-serif;
+    text-decoration: none;
+}
+
+.footer {
+    background: linear-gradient(#fff7f9, rgb(49, 48, 48));
+    padding: 100px 0%;
+    width: 100%;
+    height: 40%;
+    margin-top: 1000px;
+}
+
+.counts {
+    justify-content: center;
+    align-items: center;
+}
+
+.analysis {
+    color: #1e3050;
+    font-size: 50px;
+    text-indent: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nums {
+    color: #1e3050;
+    text-indent: 100px;
+    display: flex;
+
+}
+
+.nums .num {
+    flex: 1;
+    text-align: center;
+    font-size: 40px;
+    padding-right: 90px;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(+10000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-10000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+
+.right-img img {
+    animation-name: slideInRight;
+    animation-duration: 3s;
+}
+
+.left-description {
+    animation-name: slideInLeft;
+    animation-duration: 3s;
+}
+
+.left-img,
+.tech {
+    animation-name: slideInLeft;
+    animation-duration: 5s;
+}
+
+.right-description {
+    animation-name: slideInRight;
+    animation-duration: 6s;
+}
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        width: 100%;
+    }
+
+    .right-img {
+        display: none;
+    }
+
+    .left-img {
+        display: none;
+    }
+
+    .right-description {
+        margin-left: 10px;
+    }
+
+    .left-description {
+        margin-left: 10px;
+    }
+
+    .tech {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .counts {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .analysis {
+        color: #1e3050;
+        font-size: 50px;
+        text-indent: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .nums {
+        color: #1e3050;
+        text-indent: 100px;
+        display: flex;
+
+    }
+
+    .nums .num {
+        flex: 1;
+        text-align: center;
+        font-size: 40px;
+        padding-right: 90px;
+    }
+}
